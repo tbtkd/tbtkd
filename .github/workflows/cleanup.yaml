@@ -1,0 +1,20 @@
+name: Cleanup Koyeb application
+
+on:
+  delete:
+    branches:
+      - '*'
+
+jobs:
+  cleanup:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Install and configure the tbtkd CLI
+        uses: tbtkd
+        with:
+          api_token: "${{ secrets.KOYEB_EXAMPLES_APPS_TOKEN }}"
+
+      - name: Cleanup tbtkd application
+        uses: tbtkd/action-git-deploy/cleanup@v1
+        with:
+          app-name: flask-${{ github.event.ref }}
