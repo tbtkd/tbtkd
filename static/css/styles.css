@@ -1,0 +1,267 @@
+onCommand:extension.uncssFile
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1rem;
+    /*position: fixed;
+    align-items: center;
+    width: 100%;
+    right: auto;*/
+}
+
+.logo {
+    max-width: 100%;
+    height: auto;
+    object-fit: cover;
+    object-position: bottom;
+}
+
+nav {
+    background-color: #f4f4f4;
+    padding: 0.5rem;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 10px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #333;
+}
+
+main {
+    margin: 0;
+	padding: 0;
+	font-family: Helvetica, Arial, sans-serif;
+	color: #666;
+	background: #f2f2f2; 
+	font-size: 1em;
+	line-height: 1.5em;
+	
+	padding-top: 80px;
+}
+
+form {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+label {
+    display: block;
+    margin-top: 1rem;
+}
+
+input, select {
+    width: 100%;
+    padding: 0.5rem;
+    margin-top: 0.5rem;
+}
+
+button {
+    display: block;
+    width: 100%;
+    padding: 0.5rem;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    margin-top: 1rem;
+}
+
+button:hover {
+    background-color: #555;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 1rem;
+}
+
+th, td {
+    border: 1px solid #ddd;
+    padding: 0.5rem;
+    text-align: left;
+}
+
+th {
+    background-color: #f4f4f4;
+}
+
+.button {
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    background-color: #333;
+    color: #fff;
+    text-decoration: none;
+    margin-top: 1rem;
+}
+
+.button:hover {
+    background-color: #555;
+}
+
+@media (max-width: 600px) {
+    form {
+        width: 100%;
+    }
+}
+
+/* Add these styles to the existing CSS file */
+
+#tallas-container div {
+    margin-bottom: 10px;
+}
+
+#tallas-container label,
+#tallas-container input {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+#color-container {
+    margin-top: 20px;
+}
+
+#buscar-pedidos-form {
+    margin-bottom: 20px;
+}
+
+#buscar-pedidos-form label,
+#buscar-pedidos-form input,
+#buscar-pedidos-form button {
+    margin-right: 10px;
+}
+
+/* Add these styles to the existing CSS file V2*/
+
+.producto-form {
+    margin-bottom: 20px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.producto-form select,
+.producto-form input {
+    margin-right: 10px;
+    margin-bottom: 10px;
+}
+
+#agregar-producto {
+    margin-bottom: 20px;
+}
+
+.alerta {
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #f5c6cb;
+    border-radius: 4px;
+    color: #721c24;
+    background-color: #f8d7da;
+}
+
+/* Agregar estos estilos a tu archivo CSS existente V3*/
+
+.logo {
+    max-width: 200px;
+    margin-bottom: 20px;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.4);
+}
+
+.modal-content {
+    background-color: #fefefe;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    max-width: 500px;
+    text-align: center;
+}
+
+.notificacion {
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid transparent;
+    border-radius: 4px;
+    display: none;
+}
+
+.notificacion.success {
+    color: #155724;
+    background-color: #d4edda;
+    border-color: #c3e6cb;
+}
+
+.notificacion.error {
+    color: #721c24;
+    background-color: #f8d7da;
+    border-color: #f5c6cb;
+}
+
+.button {
+    display: inline-block;
+    padding: 10px 20px;
+    margin-top: 20px;
+    background-color: #333;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.button:hover {
+    display: inline-block;
+    padding: 10px 20px;
+    margin-top: 20px;
+    background-color: #333; /*Al poner el cursor sobre el boton, se cambia al color ele*/
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+
+/* Agregar estos estilos a tu archivo CSS existente V4*/
+
+#tabla-pedidos-hoy {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+#tabla-pedidos-hoy th, #tabla-pedidos-hoy td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+#tabla-pedidos-hoy th {
+    background-color: #f2f2f2;
+}
+

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registrar Pago</title>
+    <link rel="stylesheet" href="{{   url_for('static', filename='css/styles.css') }}">
+</head>
+<body>
+    <header>
+        <img src="{{ url_for('static', filename='img/logo.png') }}" alt="Logo" class="logo">
+        <h1>Capturar Pago(s)</h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="{{ url_for('index') }}">Inicio</a></li>
+            <li><a href="{{ url_for('lista_alumnos') }}">Ver Alumnos</a></li>
+            <li><a href="{{ url_for('detalle_alumno', id=alumno.id) }}">Actualizar datos del Alumno</a></li>
+            <li><a href="{{ url_for('pagos', alumno_id=alumno.id) }}">Consultar Pagos</a></li>
+        </ul>
+    </nav>
+    <main>
+        <h2>Capturar Pago de: {{ alumno.nombre }} {{ alumno.apaterno }} {{ alumno.apmaterno }}</h2>
+        <form id="pago-form">
+            <input type="hidden" name="alumno_id" value="{{ alumno.id }}">
+
+            <label for="fecha">Fecha:</label>
+            <input type="date" id="fecha" name="fecha" required>
+
+            <label for="monto">Monto:</label>
+            <input type="number" id="monto" name="monto" step="0.01" required>
+
+            <label for="concepto">Concepto:</label>
+            <input type="text" id="concepto" name="concepto" required>
+
+            <button type="submit">Registrar Pago</button>
+        </form>
+    </main>
+    <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+</body>
+</html>
