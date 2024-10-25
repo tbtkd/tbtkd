@@ -1,1 +1,1 @@
-web: ethical-lauren app.run
+web: ethical-lauren -b :$PORT app:app
