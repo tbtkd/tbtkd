@@ -1,1 +1,1 @@
-web: yarn start:app
+web: tbtkd app init "tbtkd"
