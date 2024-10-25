@@ -1,1 +1,1 @@
-web: ethical-lauren -b :$PORT app:app
+web: yarn start:production
