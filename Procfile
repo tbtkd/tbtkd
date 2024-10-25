@@ -1,1 +1,1 @@
-web: python run app.py
+web: app.run(debug=True, host='0.0.0.0')
